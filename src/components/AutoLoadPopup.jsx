@@ -21,6 +21,10 @@ const AutoLoadPopup = () => {
         };
     }, []); // Run only once on component mount
 
+
+    // const show = () => setShowModal(true);
+
+    
     const handleClose = () => {
         const modalElement = modalRef.current;
         const modal = Modal.getInstance(modalElement);
@@ -30,6 +34,7 @@ const AutoLoadPopup = () => {
 
         // Update state to hide the modal component
         setShow(false);
+        
     };
 
     const handleModalHidden = () => {
@@ -99,7 +104,7 @@ const AutoLoadPopup = () => {
     return (
         show && (
             <div className="modal fade" id="autoLoadModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" ref={modalRef} >
-                <div className="modal-dialog modal-sm">
+                <div className="modal-dialog modal-md">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="exampleModalLabel">Talk To Our Experts</h5>
@@ -132,30 +137,6 @@ const AutoLoadPopup = () => {
                                         <button type='submit' className='btn  w-100' disabled={isSubmitting}> {isSubmitting ? 'Please wait..' : 'Submit'}</button>
                                     </div>
                                 </form>
-
-                                {/* <form onSubmit={handleSubmit}>
-                                    {error && (
-                                        <div className="alert alert-danger alert-dismissible fade show" role="alert">
-                                            {error} - {countdown}
-                                            <button className="btn-close border-0 bg-transparent" onClick={() => setError('')}></button>
-                                        </div>
-                                    )}
-                                    <div className="mb-3">
-                                        <input type="text" className='form-control' value={name} onChange={(e) => setName(e.target.value)} placeholder='Name*' />
-                                    </div>
-                                    <div className="mb-3">
-                                        <input type="tel" className='form-control' value={number} onChange={(e) => setNumber(e.target.value)} placeholder='Number*' />
-                                    </div>
-                                    <div className="mb-3">
-                                        <input type="email" className='form-control' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email*' />
-                                    </div>
-                                    <div className="mb-3">
-                                        <textarea name="" placeholder='Loction of your plot' value={message} onChange={(e) => setMessage(e.target.value)} className='form-control' rows='3' id=""></textarea>
-                                    </div>
-                                    <div className="mb-3">
-                                        <button type='submit' className='btn w-100' disabled={isSubmitting} > {isSubmitting ? 'Please Wait...' : 'Book Your Consultant'}</button>
-                                    </div>
-                                </form> */}
                             </div>
                         </div>
 

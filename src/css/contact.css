@@ -1,0 +1,247 @@
+.upper_contact_sec {
+    margin: 3rem 0;
+}
+
+.upper_contact_sec_div {
+    padding: 2rem 2.6rem;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.486);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #1565c0be;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.upper_contact_sec_div h2 {
+    line-height: normal;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    color: #fff;
+
+}
+
+.upper_contact_sec_div .div_mail a {
+    font-size: 1rem;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.contact_section_form {
+    margin: 3rem 0;
+}
+
+.contact_section_form h2 {
+    text-align: start;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact_section_form h5 {
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.contact_section_form input {
+    width: 100%;
+    height: 2.7rem;
+    border: none;
+    border-bottom: 1px solid #44444491 !important;
+    box-shadow: none;
+    border-radius: 0;
+    outline: 0 !important;
+}
+
+.contact_section_form input::placeholder,
+.contact_section_form textarea::placeholder {
+    color: #bdbbbbdd;
+
+}
+
+.contact_section_form input:focus,
+.contact_section_form textarea:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+.contact_section_form textarea {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #44444491 !important;
+}
+
+.contact_section_form h5 i {
+    color: #f15a29;
+}
+
+.contact_section_form h5 a {
+    cursor: pointer;
+}
+
+.contact_section_form2 {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.contact_section_form2 button {
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 500;
+    padding: 1rem 1.8rem;
+    background-color: #ffb703;
+    color: #fff;
+}
+
+.contact_section_form2 h2 {
+    font-size: 3rem;
+    text-align: start;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+.contact_section_form2 p {
+    line-height: normal;
+    text-align: start;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+}
+
+/* social media sec */
+.contact_social_media_sec {
+    padding: 2rem 2.6rem 0rem;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.486);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.contact_social_media_sec .social_media_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_div a {
+    display: inline-block;
+    margin: 10px;
+    color: #ffb703;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #ffb703;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 50% 50% 50% 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+}
+
+.contact_social_media_sec h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.contact_social_media_sec img {
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* contact banner */
+.page-title-bar {
+    position: relative;
+}
+
+
+
+.page-title-bar-inner {
+    background-image: url('https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/page-header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 7rem 0rem;
+    margin: 0px;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.page-title-bar-heading {
+    color: #fff;
+}
+
+.page-title-bar-heading h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.page-title-bar-heading p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+    .upper_contact_sec_div {
+        padding: 1.5rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .upper_contact_sec_div h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact_section_form2 {
+        padding: 1.3rem;
+    }
+
+    .contact_section_form2 h2 {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .contact_section_form2 p {
+        display: none;
+    }
+
+    .contact_section_form2 button {
+        width: 100%;
+    }
+
+    .social_media_div a {
+        width: 40px!important;
+        height: auto!important;
+    }
+    .contact_social_media_sec{
+        margin: 2rem 0 0 0;
+        height: auto;
+    }
+}

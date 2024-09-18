@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.cardSliderContainer {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.cardSlider {
+  height: 80vh;
+  border: #fff solid 1px;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.cardSlider h3 {
+  position: absolute;
+  font-size: 28px;
+  top: 30px;
+  left: 30px;
+  margin: 0;
+  opacity: 0;
+}
+
+.cardSlider.cardsactive {
+  flex: 15;
+}
+
+.cardSlider.cardsactive h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.6s;
+}

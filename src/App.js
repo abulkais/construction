@@ -17,12 +17,11 @@ import Services from './components/Services';
 import ConstructionNCR from './components/ConstructionNCR';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
-import OurProjects from './components/OurProjects';
-import HowWorks from './components/HowWorks';
+import ResidentialProjects from './components/ResidentialProjects';
+import CommercialProjects from './components/CommercialProjects';
+import Gallery from './components/Gallery';
 import ConstructionChennai from './components/ConstructionChennai';
 import ConstructionGujarat from './components/ConstructionGujarat';
-
-
 function App() {
   return (
     <>
@@ -39,10 +38,10 @@ function App() {
           <Route path='/construction-company-in-gujarat' element={<ConstructionGujarat />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/terms-conditions' element={<TermsConditions />} />
-          <Route path='/our-projects' element={<OurProjects />} />
-          <Route path='/how-it-works' element={<HowWorks />} />
+          <Route path='/residential-construction-company' element={<ResidentialProjects />} />
+          <Route path='/commercial-construction-company' element={<CommercialProjects />} />
+          <Route path='/gallery' element={<Gallery />} />
 
-          
 
 
 

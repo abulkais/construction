@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { Link } from 'react-router-dom';
 import AutoLoadPopup from './AutoLoadPopup';
@@ -6,31 +6,33 @@ import TawkToChat from './TawkToChat';
 
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleNavbar = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <>
 
 
 
-            <nav className="navbar navbar-expand-lg navbar-light bg-white" style={{ boxShadow: '0 0 0.25rem 0 rgba(0, 0, 0, 0.12)' }}>
+            <nav className="sticky_navbar navbar navbar-expand-lg sticky-top navbar-light bg-white" style={{ boxShadow: '0 0 0.25rem 0 rgba(0, 0, 0, 0.12)' }}>
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        <img src="https://www.bricknbolt.com/assets/images/logo/Logo_Home.svg" alt="" />
+                        <img src="https://i.ibb.co/xfm1VPx/logo-removebg-preview.png" style={{ height: '5.3rem', width: '100%' }} alt="" />
                     </Link>
                     <button
-                        className="navbar-toggler"
+                        className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`}
                         type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
+                        onClick={toggleNavbar}
+                        aria-controls="navbarNav"
+                        aria-expanded={isOpen}
                         aria-label="Toggle navigation"
                     >
-                        <span className="navbar-toggler-icon" />
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ justifyContent: 'flex-end' }}>
-                        <ul className="navbar-nav mb-2 mb-lg-0 ">
-
+                    <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+                        <ul className="navbar-nav ms-auto">
                             <li className="nav-item dropdown">
                                 <a
                                     className="nav-link dropdown-toggle"
@@ -38,64 +40,10 @@ const Navbar = () => {
                                     id="navbarDropdown"
                                     role="button"
                                     data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
+                                    aria-expanded="false">
                                     Plot Locations
                                 </a>
-                                {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            NCR-Gurgaon
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            NCR-Faridabad
-                                        </Link>
-                                    </li>
-                                    <li>
 
-                                    </li>
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            NCR-Delhi
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link className="dropdown-item" to="/construction-company-noida">
-                                            NCR-Noida
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            Jaipur
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            Hyderabad
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            Chennai
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            Bengaluru
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link className="dropdown-item" to="#">
-                                            Pune
-                                        </Link>
-                                    </li>
-                                </ul> */}
 
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
@@ -113,12 +61,6 @@ const Navbar = () => {
                                             Chennai
                                         </Link>
                                     </li>
-                                    <li>
-
-                                    </li>
-
-
-
                                 </ul>
                             </li>
 
@@ -127,24 +69,45 @@ const Navbar = () => {
                                     Services
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/our-projects">
+
+
+                            <li className="nav-item dropdown">
+                                <a
+                                    className="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Our Projects
-                                </Link>
+                                </a>
+
+
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <Link className="dropdown-item" to="/residential-construction-company">
+                                            Residential  Projects
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" to="/commercial-construction-company">
+                                            Commercial Projects
+                                        </Link>
+                                    </li>
+                                </ul>
                             </li>
 
 
+
                             <li className="nav-item">
-                                <Link className="nav-link" to="/how-it-works">
-                                    How it Works
+                                <Link className="nav-link" to="/gallery">
+                                    Gallery
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link
                                     className="nav-link"
-                                    to="about"
-
-                                >
+                                    to="/about">
                                     About us
                                 </Link>
                             </li>
@@ -153,28 +116,23 @@ const Navbar = () => {
                                     Contact us
                                 </Link>
                             </li>
-                            <li className="nav-item nav-button-bg">
-                                <Link to="#" class="nav-link  lets-build-shadow">Let’s Build<ArrowRightAltIcon /></Link>
-                            </li>
+                           
 
                             <li class="nav-item" style={{ display: 'flex', alignItems: 'center', marginLeft: '1.6rem' }}>
 
-                                <Link to="tel:+91 8271057255" className='btn btn-round' style={{ backgroundColor: '#007AFF', padding: '10px' }}>
-                                    <span class="fa fa-phone text-white"></span>
+                                <Link to="tel:+91 8271057255" style={{ color: '#000', textDecoration: 'none' }}>
+                                    <img src="https://kvch.in/assets-new/img/india.webp" alt="" />
+                                    <span style={{ marginLeft: '5px', fontWeight: '500' }}>+91 827 105 7255</span>
                                 </Link>
-                                <div style={{ marginLeft: '5px', fontWeight: '500' }}>+91 827 105 7255</div></li>
-
+                            </li>
                         </ul>
-
                     </div>
                 </div>
-            </nav>
-
-
+            </nav >
 
 
             {/* tawk to chat widget  start*/}
-            <TawkToChat />
+            {/* <TawkToChat /> */}
 
             {/* tawk to chat widget end */}
 

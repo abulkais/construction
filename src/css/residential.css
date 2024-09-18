@@ -1,0 +1,100 @@
+.residential_sec {
+    position: relative;
+}
+
+.residential_sec_banner {
+    background-image: url('https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/page-header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 7rem 0rem;
+    margin: 0px;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+
+
+.residential_sec_banner h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.residential_sec_banner p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.rs_service {
+    margin: 4rem 0;
+}
+
+.rs_service h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.rs_service_box {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    border: 5px solid #fff
+}
+
+.rs_service_box button {
+    text-decoration: none;
+    padding: 8px 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ffb703;
+    background-color: #ffb703;
+    transition: 1s ease-in-out;
+
+}
+
+.rs_service_box button:hover {
+    color: #ffb703;
+    border: 2px solid #ffb703;
+    background-color: #fff;
+}
+
+
+.rs_service_box img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.rs_service .col-lg-4 {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .residential_sec_banner {
+        padding: 4rem 0rem;
+    }
+    .residential_sec_banner h1{
+        font-size:2rem
+    }
+    .rs_service_box{
+        padding: 0;
+    }
+    .rs_service h2{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+}

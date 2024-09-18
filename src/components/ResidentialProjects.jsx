@@ -1,14 +1,75 @@
 import React from 'react'
-
-const OurProjects = () => {
+import '../css/residential.css'
+import { Link } from 'react-router-dom';
+import CommonContactForm from './CommonContactForm';
+import WhyChoose from './WhyChoose';
+const ResidentialProjects = () => {
     return (
         <>
-            <section className='projects_section'>
-                <img src="https://www.forcineconcrete.com/wp-content/themes/best-practices-theme/public/images/visual-banner.jpg" alt="" />
+            <section className='residential_sec'>
+                <div className="residential_sec_banner">
+                    <div className="container">
+                        <h1>Residential Project</h1>
+                        <p><Link href="/"> <i class="fa fa-home"></i> Home  </Link> / <a>Residential</a></p>
+                    </div>
+                </div>
             </section>
-            <section className='project_exp'>
+
+
+
+            <section className='rs_service'>
                 <div className="container">
-                    <h1>PROJECT EXPERIENCE</h1>
+                    <h2>Residential Services </h2>
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div className="rs_service_box">
+                                <img src="https://www.greenleafconstruction.co.in/images/services/commercial/commercial1-min.jpg" alt="" />
+                                <center>  <button> Enquire Now</button></center>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4">
+                            <div className="rs_service_box">
+                                <img src="https://www.greenleafconstruction.co.in/images/services/commercial/commercial1-min.jpg" alt="" />
+                                <center>  <button> Enquire Now</button></center>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="rs_service_box">
+                                <img src="https://www.greenleafconstruction.co.in/images/services/commercial/commercial1-min.jpg" alt="" />
+                                <center>  <button> Enquire Now</button></center>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4">
+                            <div className="rs_service_box">
+                                <img src="https://www.greenleafconstruction.co.in/images/services/commercial/commercial1-min.jpg" alt="" />
+                                <center>  <button> Enquire Now</button></center>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4">
+                            <div className="rs_service_box">
+                                <img src="https://www.greenleafconstruction.co.in/images/services/commercial/commercial1-min.jpg" alt="" />
+                                <center>  <button> Enquire Now</button></center>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="rs_service_box">
+                                <img src="https://www.greenleafconstruction.co.in/images/services/commercial/commercial1-min.jpg" alt="" />
+                                <center>  <button> Enquire Now</button></center>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <WhyChoose />
+
+            <section className='project_exp pt-5'>
+                <div className="container">
+                    <h1>Project Experience</h1>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="iframe">
@@ -52,7 +113,8 @@ const OurProjects = () => {
                     </div>
                 </div>
             </section>
-            <hr />
+
+            {/* <hr />
             <section className='projects_section2'>
                 <div className="container">
                     <h2>Our Projects</h2>
@@ -177,8 +239,11 @@ const OurProjects = () => {
                     </div>
                 </div>
             </section>
+            */}
+
+            <CommonContactForm />
         </>
     )
 }
 
-export default OurProjects
+export default ResidentialProjects

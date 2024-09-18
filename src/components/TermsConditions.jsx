@@ -1,12 +1,20 @@
 import React from 'react'
-
+import '../css/term.css'
+import { Link } from 'react-router-dom';
 const TermsConditions = () => {
     return (
         <>
+
+            <section class="terms_sec">
+                <div class="terms_sec_banner">
+                    <div class="container">
+                        <h1>Terms & Conditions</h1>
+                        <p><Link href="/privacy-policy"> <i class="fa fa-home"></i> Home  </Link> / <a>Terms & Conditions</a></p>
+                    </div>
+                </div>
+            </section>
             <section className='privacy_banner'>
-                <figure>
-                    <img src="https://www.lindlers.com/wp-content/uploads/2021/05/banner-inner-10.jpg" alt="terms constions banner" />
-                </figure>
+
                 <div className="container">
                     <div className="privacy_banner_div">
                         <h1>

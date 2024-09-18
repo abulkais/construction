@@ -9,7 +9,7 @@ const SocialMedia = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <p>
-                                Copyright ©2024 <Link to='/'>Bricknbolt</Link> , All Rights Reserved
+                                Copyright ©2024 <Link to='/'>tifdevelopers</Link> , All Rights Reserved
                             </p>
                         </div>
                         <div className="col-md-6">

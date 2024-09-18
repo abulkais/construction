@@ -61,22 +61,19 @@ const BannerSlider = () => {
 
     return (
         <>
-            <section>
+            <section className='home_banner_slider' >
                 <div id="demo" class="carousel slide" data-bs-ride="carousel">
                     {/* <!-- Indicators/dots --> */}
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button> */}
                     </div>
 
 
                     {/* <!-- The slideshow/carousel --> */}
                     <div class="carousel-inner">
-                        {/* <div class="carousel-item active">
-                            <img src="https://website-lps-marketing-data.s3.ap-south-1.amazonaws.com/website-lps/ncrPlain.webp" class="d-block" style={{ width: '100%' }} />
-                        </div> */}
+
                         <div class="carousel-item active">
                             <img src="https://www.bricknbolt.com/assets/images/house-construction-1.jpg" class="d-block" style={{ width: '100%' }} />
                         </div>
@@ -130,6 +127,33 @@ const BannerSlider = () => {
                     </div>
                 </article>
             </section>
+
+            <div className="mobile_form">
+                <h2>Talk To Our Expert</h2>
+                <form onSubmit={handleSubmit}>
+                    {error && (
+                        <div className="alert alert-danger alert-dismissible fade show" role="alert">
+                            {error} - {countdown}
+                            <button className="btn-close border-0 bg-transparent" onClick={() => setError('')}></button>
+                        </div>
+                    )}
+                    <div className="mb-3">
+                        <input type="text" className='form-control' value={name} onChange={(e) => setName(e.target.value)} placeholder='Name*' />
+                    </div>
+                    <div className="mb-3">
+                        <input type="tel" className='form-control' value={number} onChange={(e) => setNumber(e.target.value)} placeholder='Number*' />
+                    </div>
+                    <div className="mb-3">
+                        <input type="email" className='form-control' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email*' />
+                    </div>
+                    <div className="mb-3">
+                        <textarea name="" placeholder='Loction of your plot' value={message} onChange={(e) => setMessage(e.target.value)} className='form-control' rows='3' id=""></textarea>
+                    </div>
+                    <div className="mb-3">
+                        <button type='submit' className='btn w-100' disabled={isSubmitting} > {isSubmitting ? 'Please Wait...' : 'Book Your Consultant'} <ArrowRightAltIcon /></button>
+                    </div>
+                </form>
+            </div>
         </>
     )
 }

@@ -1,12 +1,19 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
+import '../css/privacypolicy.css'
 const PrivacyPolicy = () => {
   return (
     <>
+
+      <section class="pp_sec">
+        <div class="pp_sec_banner">
+          <div class="container">
+            <h1>Privacy Policy</h1>
+            <p><Link href="/privacy-policy"> <i class="fa fa-home"></i> Home  </Link> / <a>Privacy Policy</a></p>
+          </div>
+        </div>
+      </section>
       <section className='privacy_banner'>
-        <figure>
-          <img src="https://www.forcineconcrete.com/wp-content/themes/best-practices-theme/public/images/visual-banner.jpg" alt="privacy policy banner" />
-        </figure>
         <div className="container">
           <div className="privacy_banner_div">
             <h1>

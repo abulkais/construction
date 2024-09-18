@@ -1,16 +1,20 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
-
+import '../css/whatsappCall.css'
 const WhatsAppCall = () => {
     return (
         <>
-            <Link to='/contact' class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
-                <i  style={{color:'#fff', textDecoration:'none'}} class="fa fa-question"></i>
-            </Link>
 
-            <Link to="https://api.whatsapp.com/send?phone=8271057255&text=Hi" target='_blank' class="btn-whatsapp-pulse">
-                <i class="fa fa-whatsapp"></i>
-            </Link>
+
+            <div className="whatsapp_img">
+                <a href="https://wa.me/9717224326" target="_blank" title="WhatsApp Us">
+                    <img src="https://www.deejos.com/images/whatsapp.svg" class="img-responsive" alt="WhatsApp" loading="lazy" />
+                </a>
+            </div>
+            <div className="call_img">
+                <a href="tel:+9717224326" title="Call Us">
+                    <img src="https://www.deejos.com/images/call.png" class="img-responsive" alt="Call Us" loading="lazy" />
+                </a>
+            </div>
         </>
     )
 }

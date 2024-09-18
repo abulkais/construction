@@ -1,0 +1,94 @@
+.gallery_sec {
+    position: relative;
+}
+
+.gallery_sec_banner {
+    background-image: url('https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/page-header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 7rem 0rem;
+    margin: 0px;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+
+
+.gallery_sec_banner h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.gallery_sec_banner p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* gallery banner css :end */
+/*  */
+.galler_img_sec {
+    margin: 4rem 0;
+
+}
+
+.galler_img_sec p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    color: #ffb703;
+}
+
+.galler_img_sec h2 {
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+
+#imageModal img {
+    width: 100%;
+    height: auto;
+}
+
+.galler_img_sec img {
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
+}
+
+.galler_img_sec button{
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery_sec_banner {
+        padding: 4rem 0rem;
+    }
+
+    .gallery_sec_banner h1 {
+        font-size: 2rem;
+    }
+
+    .galler_img_sec p {
+        font-size: 1rem;
+    }
+
+    .galler_img_sec h2 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+}

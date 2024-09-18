@@ -16,9 +16,7 @@ const CustomersSlider = () => {
     return (
         <section className='customer_slider_section'>
             <div className="container">
-
-
-                <h3>Our Customers</h3>
+                <h3>Our Customers Reviews</h3>
                 <p>Over 800 happy family members are part of Brick&Bolt family.</p>
                 <div id="CustomersSlider" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <div className="carousel-inner">

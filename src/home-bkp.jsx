@@ -14,10 +14,6 @@ import '../css/home.css'
 import { Link } from 'react-router-dom'
 import CommonContactForm from './CommonContactForm';
 import Clients from './Clients';
-import GalleryImages from './GalleryImages';
-import BannerSlider1 from './BannerSlider1';
-import CardsSlider from './CardsSlider';
-
 const Home = () => {
 
 
@@ -27,40 +23,7 @@ const Home = () => {
             <title>Home Construction Company | Best Home Builders | Brick &amp; Bolt</title>
             <meta name="description" content='Brick & Bolt Indians No.1 Tech-Enabled House Construction Company: Build your dream home with our expert home contractors & personalized approach. Schedule a free consultation today' />
             <meta name="keywords" content='' />
-            {/* <BannerSlider /> */}
-
-            <BannerSlider1 />
-
-            <article className="patner-with">
-                <div className="container">
-                    <div className="logos">
-                        <div className="logo_items">
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/azania_bank.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/fjitsu.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/gtbank.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/blackberry.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/e-y.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/motherson.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/hcl.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/pwc.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/tech_mahindra.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/tcs.webp" />
-                        </div>
-                        <div className="logo_items">
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/azania_bank.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/fjitsu.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/gtbank.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/blackberry.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/e-y.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/motherson.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/hcl.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/pwc.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/tech_mahindra.webp" />
-                            <img src="https://kvch.in/landingpage/kvch/assets-new/img/tcs.webp" />
-                        </div>
-                    </div>
-                </div>
-            </article>
+            <BannerSlider />
 
 
             <section className='location_sec'>
@@ -89,7 +52,16 @@ const Home = () => {
                             </Link>
                         </div>
 
-
+                        {/* <div className="col-lg-3">
+                            <Link to=''>
+                                <div className="location_box">
+                                    <div className="location_box_inner">
+                                        <img alt="Chennai" src="https://www.deejos.com/images/chennai.png" />
+                                        <h3>Delhi</h3>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div> */}
 
                         <div className="col-lg-3 mx-auto">
                             <Link to='/construction-company-in-gujarat'>
@@ -101,23 +73,13 @@ const Home = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="col-lg-3">
-                            <Link to=''>
-                                <div className="location_box">
-                                    <div className="location_box_inner">
-                                        <img alt="Chennai" src="https://www.deejos.com/images/chennai.png" />
-                                        <h3>India</h3>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </section>
 
 
             <section className='Completed_sec'>
-                <div className="container-fluid " style={{}}>
+                <div className="container-fluid">
                     <p>Actual Pictures</p>
                     <h3>Our Completed Site Pictures</h3>
                     <div className="row no-gutters">
@@ -206,9 +168,6 @@ const Home = () => {
                 </div>
 
             </section>
-
-
-            <CardsSlider />
             <WhyChoose />
 
             <section className="services_sec_our_services">
@@ -285,10 +244,7 @@ const Home = () => {
 
             <Clients />
 
-            <GalleryImages />
-
-
-            {/* <ProjectsSlider /> */}
+            <ProjectsSlider />
             <Packages />
             <CustomersSlider />
 

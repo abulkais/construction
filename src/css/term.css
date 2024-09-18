@@ -1,0 +1,38 @@
+
+
+.term_sec{
+    position: relative
+}
+.terms_sec_banner {
+    background-image: url(https://meconprojects.com/assets/images/about-us-banner-mecon-projects.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 7rem 0rem;
+    margin: 0px;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+.terms_sec_banner h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.terms_sec_banner p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+    .terms_sec_banner {
+        padding: 4rem 0rem;
+    }
+    .terms_sec_banner h1{
+        font-size: 2rem;
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "construction",
+  "name": "construtiontest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,11 +15,13 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
+    "construction": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,5 +47,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "kaish",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abulkais/construtiontest.git"
+  },
+  "keywords": [
+    "constrution"
+  ],
+  "bugs": {
+    "url": "https://github.com/abulkais/construtiontest/issues"
+  },
+  "homepage": "https://github.com/abulkais/construtiontest#readme"
 }

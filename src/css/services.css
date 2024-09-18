@@ -1,0 +1,383 @@
+.service_sec {
+    position: relative;
+}
+
+.serices_sec_banner {
+    background-image: url('https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/page-header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 7rem 0rem;
+    margin: 0px;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+
+
+.serices_sec_banner h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.serices_sec_banner p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.services_sec_our_services {
+    margin: 5rem 0;
+    width: 100%;
+    height: auto;
+}
+
+.services_sec_our_services h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.services_sec_our_services .span_services {
+    text-align: center;
+    color: #ffb703;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* 
+.services_bg_img {
+    background-image: url('');
+    border-radius: 1rem;
+    transition: all .4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.services_bg_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0) 13.02%, rgba(0, 0, 0, 0.51) 42.5%, rgba(0, 0, 0, 0.63) 70%, #000000 100%);
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.services_bg_img img {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+    display: block;
+}
+
+.services_bg_up {
+    --width: calc(25% - 22.5px);
+}
+
+.content_body {
+    z-index: 100 !important;
+    position: relative;
+    bottom: 7rem;
+
+    padding: 0 2rem;
+    text-align: left;
+    transform: translateY(70%);
+    transition: all 0.5s ease-in-out;
+}
+
+.content_body h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.content_body p {
+    display: none;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: normal;
+    font-weight: 400;
+} */
+
+
+.service_box {
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(255, 80, 41, 0.05);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    transition: 1s;
+}
+
+.service_box:hover {
+    transition: 1s;
+    height: 100%;
+    padding: 2rem;
+    background-color: #dadfdf54;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+}
+
+.service_box img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+.service_box h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.service_box p {
+    text-align: justify;
+}
+
+.services_sec_our_services .col-xl-4,
+.services_sec_our_services .col-lg-4,
+.services_sec_our_services .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+.service_box button {
+    color: #fff;
+    background: #ffab0a;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 8px 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0;
+    margin-top: 1rem 0 0 0;
+}
+
+/* common contact form */
+.common_conatctform_sec {
+    background-color: #e9f7fe;
+    background-image: url(https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/contact-us-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 0;
+
+}
+
+.common_contactform_1st_div {
+    background-color: #000000;
+    padding: 2rem 2rem 0;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.common_contactform_1st_div .service_call_icon {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.common_contactform_1st_div p {
+    /* text-align: center; */
+    color: #ffffff93;
+    margin: 0;
+    font-size: 1.1rem;
+
+    line-height: normal;
+}
+
+.common_contactform_1st_div a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.common_contactform_1st_div img {
+    width: 250px;
+    height: auto;
+}
+
+.common_contactform_2nd_div {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.common_contactform_2nd_div form input {
+    margin-bottom: 2rem;
+    border-radius: 0;
+    height: 3.4rem;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #4444448f;
+}
+
+.common_contactform_2nd_div form input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.common_contactform_2nd_div form textarea {
+    border-radius: 0;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #4444448f;
+}
+
+.common_contactform_2nd_div form textarea:focus {
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+
+}
+
+.common_contactform_2nd_div button {
+    width: 100%;
+    background-color: #ffb703;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    border: 0;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.common_contactform_2nd_div h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2rem;
+    text-align: start;
+    color: #444;
+}
+
+
+/* clients section :start */
+.clients_sec {
+    background: #fff6f4;
+    padding: 4rem 0;
+    margin: 1rem  0 5rem 0;
+}
+
+.clients_sec h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.clients_contaner_box {
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(24, 39, 75, .05);
+}
+
+.companies_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.companies_container img {
+    height: 80px;
+    width: auto;
+    margin: 1rem;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.companies_container img:hover{
+    transform: scale(1.2)
+}
+
+@media only screen and (max-width:575px) {
+
+    .serices_sec_banner {
+        padding: 4rem 0rem;
+    }
+
+    .serices_sec_banner h2 {
+        font-size: 2rem;
+    }
+
+
+    .services_sec_our_services h2 {
+        line-height: normal;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .service_box img {
+        width: 50px;
+        height: auto;
+    }
+
+    .service_box h3 {
+        font-size: 1.2rem;
+    }
+
+    .service_box {
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+    .service_box button {
+        width: 100%;
+    }
+
+    .services_sec_our_services {
+        margin: 4rem 0 2rem;
+    }
+
+    .common_conatctform_sec {
+        background-image: none;
+        padding: 3rem 0;
+    }
+
+    .common_contactform_1st_div a {
+        font-size: 1.2rem;
+    }
+
+    .common_contactform_1st_div p {
+        font-size: 14px;
+    }
+
+
+    .common_contactform_2nd_div {
+        padding: 2rem;
+    }
+
+    .common_contactform_2nd_div h2 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    .common_contactform_2nd_div form input {
+        margin-bottom: 1rem;
+    }
+}

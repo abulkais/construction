@@ -1,0 +1,383 @@
+/* about banner sec */
+.about_sec {
+    position: relative;
+}
+
+
+.about_sec_banner {
+    background-image: url('https://meconprojects.com/assets/images/about-us-banner-mecon-projects.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 7rem 0rem;
+    margin: 0px;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+
+
+.about_sec_banner h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.about_sec_banner p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.about_sec_1st_para {
+    margin: 5rem 0;
+}
+
+.about_sec_1st_para_img {
+    width: 100%;
+    height: auto;
+}
+
+.about_sec_1st_para_div span {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffb703;
+}
+
+.about_sec_1st_para_div h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.about_sec_1st_para_div p {
+    font-size: 1.2rem;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.about_sec_1st_para_sec {
+    width: 100%;
+    margin: 2rem 0;
+    height: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #e9f7fe;
+}
+
+.about_sec_1st_para_sec ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about_sec_1st_para_sec ul li {
+    font-size: 1.3rem;
+    color: #444;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.about_sec_1st_para_sec ul li i {
+    color: #ffb703;
+    font-size: 1.3rem;
+}
+
+.about_btn {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ffb703;
+    background-color: #ffb703;
+}
+
+.about_btn:hover {
+    color: #ffb703;
+    background-color: transparent;
+    border: 2px solid #ffb703;
+}
+
+
+/* about history */
+.about_history_sec {
+    margin: 3rem 0;
+    padding: 5rem 0;
+    background-color: #e9f7fe;
+}
+
+.about_history_sec img {
+    /* width: 100%; */
+    max-width: auto;
+    height: auto;
+    border-radius: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.about_history_sec_right span {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffb703;
+}
+
+.about_history_sec_right h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about_history_sec_right p {
+    font-size: 1.2rem;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.about_exp {
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    line-height: normal;
+    padding: 2.5rem;
+
+}
+
+.about_exp h3 {
+    font-weight: 500;
+    color: #444;
+    font-size: 2rem;
+}
+
+.about_exp span {
+    color: #444;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: normal;
+}
+
+/*  */
+.our_mission_vission_values {
+    margin: 5rem 0;
+}
+
+.our_mission_vission_values .our_mission {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #4444448b;
+}
+
+.our_mission_vission_values .our_mission:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.our_mission h3 {
+    margin: 1rem 0;
+    color: #444;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.our_mission p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: normal;
+}
+
+/*  */
+.about_lets_sec {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0 0;
+    margin: 3rem 0;
+    background-color: #12223b;
+}
+
+.about_lets_sec h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about_lets_sec p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: normal;
+    margin: 1rem 0 3rem 0;
+}
+
+.about_lets_sec img {
+    float: right;
+    width: 400px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .about_sec_banner {
+        padding: 4rem 0rem;
+    }
+
+    .about_sec_1st_para {
+        margin: 2rem 0;
+    }
+
+    .about_sec_1st_para_img img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.6rem;
+    }
+
+    .about_sec_1st_para_div span {
+        font-size: 1rem;
+    }
+
+    .about_sec_1st_para_div h2 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .about_sec_1st_para_div p {
+        font-size: 1rem;
+    }
+
+    .about_sec_1st_para_sec {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .about_sec_1st_para_sec ul li {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .about_sec_1st_para_sec ul li i {
+        font-size: 1rem;
+    }
+
+    .about_btn {
+        display: inline-block;
+        padding: 0.8rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_sec_banner h2 {
+        font-size: 2rem;
+    }
+
+    .about_history_sec img {
+        width: 100%;
+        margin-bottom: 1rem;
+        height: auto;
+    }
+
+    .about_history_sec {
+        padding: 2rem 0;
+    }
+
+    .about_history_sec_right span {
+        font-size: 1rem;
+    }
+
+    .about_history_sec_right h3 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .about_history_sec_right p {
+        font-size: 1rem;
+    }
+
+    .our_mission_vission_values {
+        margin: 3rem 0 0;
+    }
+
+    .our_mission_vission_values .our_mission {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .our_mission p {
+        margin: 0;
+    }
+
+    .about_lets_sec {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0 0;
+        margin: 0 0 1rem 0;
+    }
+
+    .about_lets_sec h3 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .about_lets_sec p {
+        font-size: 1rem;
+        margin: 0 0 1rem;
+    }
+
+    .about_lets_sec img {
+        margin-top: 2rem;
+    }
+
+    /* refrel programm */
+    .refral_program {
+        margin: 2rem 0 0;
+    }
+
+    .refral_program h3 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .refral_program img {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    /* hire the best */
+    .hire_best_house {
+        background-image: none;
+        padding: 2rem 1rem;
+    }
+
+    .hire_best_house h3 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .hire_best_home_inner_div {
+        border-right: 0;
+    }
+
+
+}
