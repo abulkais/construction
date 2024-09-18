@@ -1,0 +1,30 @@
+{
+    "Noida": [
+      {
+        "name": "Basic Package  ",
+        "price": "₹1,770/sq.ft (Incl. GST)",
+        "mainheading":"Design & Drwaing",
+        "features": ["Architectural Layout | 2D", "Basic Elevation", "Structural Design", "3D Elevation"]
+      },
+      {
+        "name": "Classic Package ",
+        "price": "₹2,040/sq.ft (Incl. GST)",
+        "mainheading":"Structure",
+        "features": ["Steel - Rathi or Kamadhenu or equivalent", "Cement - Ambuja or Dalmia or Shree or equivalent of 43 or 53 grade", "Aggregates - 20mm & 40mm", "Blocks - Standard Solid Concrete blocks. 6 inch & 4 inch"]
+      },
+      {
+        "name": "Premium Package ",
+        "price": "₹2,290/sq.ft  (Incl. GST)",
+        "mainheading":"Kitchen",
+        "features": ["Steel - Rathi or Kamadhenu or equivalent", "Cement - Ambuja or Dalmia or Shree or equivalent of 43 or 53 grade", "Aggregates - 20mm & 40mm", "Blocks - Standard Solid Concrete blocks. 6 inch & 4 inch"]
+      }
+    ],
+    "Delhi": [
+      {
+        "name": "Magnolia Package",
+        "price": "₹6,160/sq.ft",
+        "features": ["Ceramic Wall Dado - Upto Rs.40 per Sqft", "Main Sink Faucet - Upto Rs.1300", "Any other Faucet or Accessories - ISI Marked", "Kitchen Sink - Stainless Steel of Single Sink make worth Rs. 3,000"]
+      }
+    ]
+  }
+  

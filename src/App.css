@@ -1,38 +1,952 @@
-.App {
-  text-align: center;
+.btn-whatsapp-pulse {
+    background: #25d366;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-whatsapp-pulse-border {
+    bottom: 120px;
+    right: 20px;
+    animation-play-state: paused;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-whatsapp-pulse-border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .nav-link {
+    color: #000;
+}
+
+.nav-button-bg {
+    border-radius: 5px;
+    background-color: #f15a29;
+    margin-left: 1.1rem;
+}
+
+.nav-button-bg a {
+    color: #fff !important;
+    padding: 0.6rem 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lets-build-shadow {
+    box-shadow: 6px 10px 5px -1px darkgray;
+}
+
+.nav-item>.nav-link {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    justify-content: space-between;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 80, 41, 0.371) !important;
+
+}
+
+/* home page css */
+.form_style {
+    top: 13rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.form_style_inner {
+    position: absolute;
+    right: 2.5rem;
+    background-color: white;
+    width: 23%;
+    transform: translate(-5%, -18%);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.form_style_inner h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.form_style_inner button {
+    color: #fff;
+    padding: 0.6rem 0rem;
+    text-align: center;
+    font-weight: 600;
+    background-color: #f15a29;
+    border: 1px solid #f15a29;
+
+}
+
+.form_style_inner button:hover {
+    color: #f15a29;
+    border: 1px solid #f15a29;
+    background-color: transparent;
+}
+
+
+.servises_section {
+    background-color: rgba(255, 80, 41, 0.05);
+    padding: 3rem 0;
+}
+
+.servises_section a {
+    text-decoration: none;
+}
+
+.servises_section h3 {
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+
+.servises_section figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.bb-construction__type {
+    min-height: 2.8125rem;
+    background-color: #1d1a12;
+    padding: 0.75rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    position: relative;
+}
+
+.bb-construction:hover figure img {
+    transform: scale(1.1);
+    /* Zoom the image */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition */
+
+}
+
+.servises_section figure img {
+    max-width: 100%;
+    width: 100%;
+    vertical-align: top;
+    transform: transform 0.2s ease;
+}
+
+.bb-construction__type::before {
+    position: absolute;
+    width: 100%;
+    top: -0.25rem;
+    right: 0;
+    height: 0.25rem;
+    background-color: #f15a29;
+    content: '';
+    transition: all 0.2s ease;
+}
+
+.bb-construction__type:hover {
+    background-color: #f15a29;
+}
+
+.bb-construction__type span {
+    z-index: 1;
+    position: relative;
+}
+
+.why_section {
+    margin: 3rem 0;
+}
+
+.why_section h3 {
+    font-size: 2.5rem;
+}
+
+.why_section p {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.why_section .why_section_bg {
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: rgba(255, 80, 41, 0.05);
+}
+
+.why_section .why_section_bg:hover {
+    background-color: whitesmoke;
+}
+
+
+.why_section_bg figure img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.why_section_bg figure {
+    margin: 0;
+}
+
+.why_section_bg h4 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.why_section_bg p {
+    text-align: center;
+}
+
+
+
+
+/* home page css end */
+
+
+
+/* footer css */
+.footer {
+    /* background: url(https://www.greenleafconstruction.co.in/images/footer-bg.jpg) repeat center center; */
+    background-color: #000;
+    width: 100%;
+    padding: 68px 0 0 0;
+    color: #fff;
+    clear: both;
+}
+
+.footer p {
+    font-size: 1rem;
+    line-height: normal;
+    color: #fff
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 35px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.7;
+}
+
+.footer a:hover {
+    margin-left: 0.2rem;
+    transition: 0.6s ease-in-out;
+    color: #f15a29
+}
+
+.footer h3 {
+    font-size: 20px;
+}
+
+.footer-text {
+    padding: 0 30px 0 0
+}
+
+.copyright {
+    font-size: 14px;
+    color: #b1b7bb;
+    border-top: solid 1px #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.copyright a {
+    color: #f15a29
+}
+
+.copyright p {
+    margin: 15px 0 0 0;
+    vertical-align: middle
+}
+
+.social-media2 {
+    float: right;
+}
+
+.social-media2 a {
+    background: #f15a29;
+    border: 1px solid #f15a29;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    padding: 10px 13px;
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 100%
+}
+
+.social-media2 a:hover {
+    margin-left: 10px;
+    border: 1px solid #f15a29;
+    background: transparent;
+    color: #fff;
+}
+
+.progress-bar {
+    background: #f15a29
+}
+
+/* footer css End */
+
+
+/* About section  */
+.about_section_banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.bb-banner-section-content {
+    top: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+    /* padding-bottom: 3rem; */
+}
+
+.bb-banner-section-content h1 {
+    color: #fff;
+}
+
+.bb-banner-section-content p {
+    color: #fff;
+}
+
+.bb-banner-section-content h1,
+.bb-banner-section-content p {
+    width: 50%;
+    line-height: normal;
+}
+
+.about_para_sec {
+    margin: 5rem 0;
+}
+
+.about_para_sec img {
+    width: 100%;
+    height: auto;
+    border-radius: 6rem 0;
+}
+
+.about_para_sec p {
+    font-size: 1.4rem;
+}
+
+.vision_mission {
+    padding: 3rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url('https://apeiron.energy/wp-content/uploads/2022/08/LA-Background_website-download_reszied.png');
+}
+
+.vision_mission p {
+    color: #fff;
+}
+
+.vision_mission h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.vision_mission h3 {
+    font-weight: 800;
+    color: #311b92;
+}
+
+
+/* popup box */
+.autoload_popup_box {
+    padding: 0.5rem 1rem;
+}
+
+.autoload_popup_box input,
+.autoload_popup_box textarea {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.autoload_popup_box button {
+    color: #fff;
+    font-weight: 500;
+    background-color: #f15a29;
+    border: 1px solid #f15a29;
+
+
+}
+
+.autoload_popup_box button:hover {
+    color: #f15a29;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #f15a29;
+}
+
+
+/* home page banner slider css */
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2% !important;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 1 !important;
+    transition: opacity .15s ease;
+}
+
+/* 404 page */
+
+.Not_found_page {
+    padding: 1rem 0 3rem 0;
+    align-items: center;
+    text-align: center;
+}
+
+.Not_found_page img {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1.6rem;
+}
+
+.Not_found_page h2,
+.Not_found_page p {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* accordian packages css */
+.accordion-body ul {
+    padding-left: 1rem;
+}
+
+.accordion-body ul li {
+    list-style-type: square;
+}
+
+.packages_section {
+    background-color: rgba(255, 80, 41, 0.05);
+    padding: 2rem 0;
+}
+
+.packages_section h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.packages_section p {
+
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.accordion_div {
+    padding: 1rem;
+    background-color: #f15a29;
+}
+
+.accordion_div h4 {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.accordion-button {
+    font-weight: 600;
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 80, 41, 0.05) !important;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+/* project slider css */
+.project_slider_section {
+    margin: 3rem 0;
+}
+
+.project_slider_section h3 {
+    font-size: 2.5rem;
+}
+
+.project_slider_section p {
+    margin-bottom: 2rem;
+}
+
+.project_slider_section .carousel-item a {
+    border-radius: 5px;
+    text-decoration: none !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project_slider_section .carousel-item figure img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    max-width: auto;
+    border-radius: 4px 5px 0px 0px;
+    height: auto;
+}
+
+.project_slider_section .carousel-item figure {
+    margin-bottom: 0;
+}
+
+
+.project_slider_section .carousel-item .card-footer {
+    padding: 0.5rem 0.75rem;
+    min-height: 3.4375rem;
+    color: #000;
+    background-color: transparent;
+}
+
+.project_slider_section .carousel-item .card-footer:hover {
+    background-color: #f15a29;
+    color: #fff;
+}
+
+.project_slider_section .carousel-item .card-footer p {
+    font-size: 1rem;
+    margin-bottom: 0.1875rem;
+}
+
+.project_slider_section .carousel-control-prev-icon,
+.project_slider_section .carousel-control-next-icon {
+    background-color: #f15b29;
+    /* padding: 1rem; */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+
+
+}
+
+.project_slider_section .carousel-control-prev-icon {
+    margin-right: 1.5rem;
+}
+
+.project_slider_section .carousel-control-next-icon {
+    margin-left: 1.5rem;
+}
+
+/* customer_slider_section */
+.customer_slider_section {
+    margin: 3rem 0;
+}
+
+.customer_slider_section h3 {
+    font-size: 2.5rem;
+}
+
+.customer_slider_section p {
+    margin-bottom: 2rem;
+}
+
+.customer_slider_section .carousel-item .card-footer {
+    padding: 0.5rem 0.75rem;
+    min-height: 3.4375rem;
+    color: #000;
+    background-color: transparent;
+}
+
+.customer_slider_section .carousel-item .card-footer:hover {
+    background-color: #f15a29;
+    color: #fff;
+}
+
+.customer_slider_section .carousel-item .card-footer p {
+    font-size: 1rem;
+    margin-bottom: 0.1875rem;
+}
+
+.customer_slider_section .carousel-control-prev-icon,
+.customer_slider_section .carousel-control-next-icon {
+    background-color: #f15b29;
+    /* padding: 1rem; */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+
+
+}
+
+.customer_slider_section .carousel-control-prev-icon {
+    margin-right: 1.5rem;
+}
+
+.customer_slider_section .carousel-control-next-icon {
+    margin-left: 1.5rem;
+}
+
+.refral_program {
+    margin: 3rem 0;
+}
+
+.refral_program h3 {
+    font-size: 2.5rem;
+}
+
+.refral_program img {
+    max-width: 100%;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.refral_program a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    height: 3rem !important;
+    border-radius: unset !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 12rem;
+    background-image: url(https://www.bricknbolt.com/assets/images/svg/btn-shape.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    border: none !important;
+}
+
+/* hire_best_house */
+.hire_best_house {
+    background-image: url(https://www.bricknbolt.com/assets/images/svg/ic-letbuild.svg);
+    background-color: rgba(255, 80, 41, 0.05);
+    padding: 5rem 0 3rem 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    /* margin-bottom: 4rem; */
+}
+
+.hire_best_house h3 {
+    font-size: 2.5rem;
+    line-height: normal;
+}
+
+.hire_best_house a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    height: 3rem !important;
+    border-radius: unset !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 12rem;
+    background-image: url(https://www.bricknbolt.com/assets/images/svg/btn-shape.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    border: none !important;
+}
+
+.hire_best_home_inner_div {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border-right: 2px dotted #f15a29;
+}
+
+.hire_best_home_inner_div img {
+    width: 20px;
+    height: auto;
+}
+
+.hire_best_home_inner_div p {
+    margin-bottom: 0.4rem;
+}
+
+.hire_best_home_inner_div span {
+    align-items: center;
+    color: #f15a29;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+/* faqs_section */
+.faqs_section {
+    /* margin: 3rem 0; */
+    padding: 3rem 0;
+    /* background-color: rgba(255, 80, 41, 0.05); */
+}
+
+.faqs_section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.faqs_section .accordion-header .accordion-button {
+    border-bottom: 1px dotted rgba(255, 80, 41, 0.05);
+}
+
+/* News Slider section */
+.news_slider_section {
+    margin: 3rem 0;
+}
+
+.news_slider_section h3 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.news_slider_box {
+    border: 1px solid #f15b299b;
+    border-radius: 3px;
+    padding: 1.5rem;
+}
+
+.news_slider_box p {
+    font-style: italic;
+    text-align: justify;
+}
+
+.news_slider_box img {
+    width: auto;
+    max-width: 100%;
+    height: 4rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* construction company */
+.construction_top_sec {
+    margin: 3rem 0;
+}
+
+.construction_top_sec h3 {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+/* privacy policy */
+.privacy_banner {
+    margin-bottom: 5rem;
+}
+
+.privacy_banner img {
+    width: 100%;
+    height: auto;
+}
+
+.privacy_banner_div h1 {
+    text-transform: uppercase;
+    margin: 3rem 0;
+    color: #000;
+    /* padding: 20px; */
+    text-align: center;
+    border-radius: 5px;
+    /* background-color: #fff; */
+}
+
+.privacy_banner_div span {
+    color: #f15a29;
+}
+
+/* contact */
+/* .contact_section{
+    margin-bottom: 4rem;
+} */
+.contact_section_inner img {
+    width: 100%;
+    height: auto;
+}
+
+.contact_section_form {
+    margin: 3rem 0;
+}
+
+.contact_section_form h2 {
+    text-align: start;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.contact_section_form h5 {
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.contact_section_form h5 i {
+    color: #f15a29;
+}
+
+.contact_section_form h5 a {
+    cursor: pointer;
+}
+
+.contact_section_form2 {
+    background-color: antiquewhite;
+    padding: 4rem;
+    border-radius: 10px;
+}
+
+.contact_section_form2 h2 {
+    text-align: center;
+}
+
+/* projects_section */
+.projects_section img {
+    width: 100%;
+    height: auto;
+}
+.project_exp{
+    margin: 3rem 0;
+}
+.project_exp h1 {
+    font-size: 2.5rem;
+    color: #f15a29;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.project_exp iframe{
+   border: 0;
+   width: 100%;
+   height: 20rem;
+}
+.iframe_details{
+    background-color: #f15a29;
+    padding: 1rem 0;
+}
+.iframe_details h3{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.projects_section2{
+    margin: 2rem 0;
+}
+.projects_section2 h2{
+    text-transform: uppercase;
+    color: #f15a29;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.projects_section2 .card{
+    margin-bottom: 2rem;
+}
+.projects_section2 .card img{
+    width: 100%;
+    height: 20rem;
+    /* max-height: 15rem; */
+    object-fit: cover;
+    object-position: top;
+}
+.projects_section2 .card-footer{
+    padding: 0.5rem 0.75rem;
+    min-height: 3.4375rem;
+    color: #000;
+    background-color: transparent;
+}
+.projects_section2 .card-footer:hover{
+    background-color: #f15a29;
+    color: #fff;
+}
+.projects_section2 .card-footer p{
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.projects_section2 .card-footer .classic{
+    display: flex;
+    justify-content: space-between;
 }
